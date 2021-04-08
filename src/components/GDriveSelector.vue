@@ -77,7 +77,7 @@ export default {
           .enableFeature(google.picker.Feature.MULTISELECT_ENABLED)
           .addView(google.picker.ViewId.DOCS)
           .setOAuthToken(this.oauthToken)
-          .setDeveloperKey("AIzaSyBaQZlYTmndQYCcdlkHoVtBzpZYandwaaA")
+          .setDeveloperKey(this.developerKey)
           .setCallback(this.pickerCallback)
           .build();
         picker.setVisible(true);
